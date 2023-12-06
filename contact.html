@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags, title, and CSS links (similar to your other pages) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Demere Walker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media/icons8-briefcase-48.png">
+</head>
+
+<body>
+  <!-- Toggle mode switch (if you want to include it on this page) -->
+  <!-- ... (your toggle mode switch code) -->
+  <div class="toggle-mode">
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <!-- Header section (similar to your other pages) -->
+  <header>
+    <h1 class="dark-mode-text">Contact Me!</h1>
+    <nav>
+      <a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main>
+    <div class="contact-form-container">
+      <!-- Contact Form (similar to the form in your footer) -->
+      <form id="contact-form">
+        <!-- Each input field and label is explained below -->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br>
+        <input type="submit" class="sub-but" value="Submit">
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer (similar to your other pages) -->
+  <footer>
+    <!-- Social media links section -->
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/demere-walker-b33b16286/" target="_blank">
+        <img src="media/linkedin-logo.png" alt="LinkedIn" height="50" width="50">
+      </a>
+      <a href="https://codepen.io/your-work/" target="_blank">
+        <img src="media/codepen.jpg" alt="CodePen" height="50" width="50">
+      </a>
+    </div>
+  </footer>
+
+  <!-- Include Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Include JavaScript (script.js) for dark/light mode toggle and other functionality -->
+  <script src="script.js"></script>
+</body>
+
+</html>

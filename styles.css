@@ -1,0 +1,535 @@
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 2rem; /* Added spacing below the header */
+}
+
+
+.toggle-mode .mode-status {
+  margin-top: 0; /* Remove any top margin */
+  padding-top: 0; /* Remove any top padding */
+}
+
+
+
+/* h1 styles */
+h1 {
+  text-align: center;
+  font-family: 'Helvetica Neue', sans-serif;
+  /* Increased font size and added margin */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  /* Default text color (dark in light mode, light in dark mode) */
+  color: #333; /* Dark color for light mode */
+  /* Transition property for smooth color change */
+  transition: color 0.4s ease-in-out;
+}
+
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin-bottom: 2rem; /* Added spacing below the navigation */
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 1rem; /* Added spacing between navigation links */
+}
+
+
+  
+  /* Wrapper styles remain the same */
+  .wrapper {
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left:auto
+}
+
+
+  /* Grid layout styles remain the same */
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header"
+      "aside-one main main main aside-two"
+      "aside-one main main main aside-two"
+      "footer footer footer footer footer"
+    ;
+    min-height: 80vh;
+    margin-top: 4rem;
+    gap: 0.5rem;
+  }
+  
+  .grid-item {
+    font-size: 1.5rem;
+    background-color: #ADD8E6;
+    padding: 1rem;
+  }
+
+  
+  /* Link styles remain the same */
+  a:link {
+    color: #0077cc; /* Standard blue color */
+    text-decoration: none; /* Remove underlines by default */
+}
+  
+  a:visited {
+    color: #0055aa; /* Slightly darker blue for visited links */
+}
+  
+  a:hover {
+    color: #0099ff; /* Lighter blue on hover */
+  }
+  
+  a:active {
+    color: #333; /* Dark gray on click */
+  }
+
+  
+  /* First letter styling remains the same */
+  p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}
+
+
+/* Sidebar (aside) styles */
+aside {
+  /* Updated margin to separate from the main content */
+  margin-bottom: 1rem; /* Adjust this value as needed */
+  padding: 1rem; /* Adjust this value as needed */
+}
+
+  /* Image opacity transition styles */
+  .fade-in-image {
+    opacity: 1; /* Start with full opacity */
+    transition: opacity 1s;
+    display: inline-block; /* Display images side by side */
+    margin-right: 10px; /* Add some spacing between images */
+  }
+  
+  .fade-in-image:hover {
+    opacity: 0.5; /* Transition to lower opacity */
+  }
+  
+  /* CSS for individual images within the .fade-in-image class */
+    .fade-in-image img {
+    max-width: 50%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
+  /* h2 styles */
+  h2 {
+    text-align: center;
+    margin-top: 200px; /* Fixed syntax issue */
+  }
+
+
+  /* Body Grid */
+  .header {
+    grid-area: header;
+  }
+  
+  .main {
+    /* Add a light background color for main content in dark mode */
+    background-color: #333;
+    /* Change the text color to improve readability in dark mode */
+    color: #f0f0f0;
+    /* Add a smooth transition for a better visual experience */
+    transition: all 0.4s ease-in;
+    grid-area: main;
+  }
+  
+  .aside-one {
+    grid-area: aside-one;
+  }
+
+
+  /* Button styles */
+  .sub-but {
+    width: 175px;
+    border-radius: 5px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 2px solid #627575; /* Fixed syntax issue */
+    background: transparent;
+    color: #627575; /* Use a variable or meaningful color name */
+    padding: 0.75rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  
+  .sub-but:hover {
+    border-color: #4482b4; /* Use a variable or meaningful color name */
+    background: #4682b4; /* Use a variable or meaningful color name */
+    color: #0b2020; /* Use a variable or meaningful color name */
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+  }
+  
+  /* Dark Mode styles */
+.dark-mode {
+  background-color: #333; /* Dark background color */
+  color: #f0f0f0; /* Light text color for better readability in dark mode */
+  transition: all 0.4s ease-in;
+}
+
+/* Adjust text color for light mode for better readability */
+.dark-mode .dark-mode-text {
+  color: #f0f0f0; /* Light color for dark mode */
+}
+
+  
+  /* Toggle Switch styles */
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 3.75rem;
+    height: 2.13rem;
+    margin-bottom: 0.63rem;
+    margin-inline: auto;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+
+  /* Image slider styles */
+.image-slider {
+  text-align: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.image-controls {
+  margin-bottom: 1rem;
+}
+
+.slider-btn {
+  font-size: 1rem;
+  background-color: #627575;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.slider-btn:hover {
+  background-color: #4482b4;
+}
+
+#image-slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Center-align the images in the .center-images div */
+.center-images {
+  text-align: center; /* Center-align horizontally */
+}
+
+/* Style the images */
+.center-images img {
+  display: inline-block; /* Display images as inline-block elements */
+  max-width: 30%; /* Adjust the percentage as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Automatically center-align inline-block elements */
+}
+  
+  /* Slider styles */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: all 0.4s ease-in;
+    border-radius: 2.13rem;
+  }
+  
+  /* Slider thumb styles */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.63rem;
+    width: 1.63rem;
+    left: 0.25rem;
+    bottom: 0.25rem;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  /* Checked state styles */
+  input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  /* Focus state styles */
+  input:focus + .slider {
+    box-shadow: 0 0 2px #2196f3;
+  }
+  
+  /* Checked thumb position styles */
+  input:checked + .slider:before {
+    transform: translateX(1.63rem);
+  }
+
+
+  /* Center-align the content in the .footer-content div */
+.footer-content {
+  display: flex; /* Use flexbox to center-align */
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Main content styles */
+main {
+  padding: 2rem; /* Added padding for content separation */
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-bottom: 1rem; /* Added spacing between paragraphs */
+}
+
+
+/* Updated Grid Template to Rows */
+/* CSS Flexbox Container Styles for Project Section in projects.html */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  margin-bottom: 50px;
+}
+
+.item:not(:first-child) {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.item__content {
+  background-color: steelblue;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 7rem;
+  border-radius: 7px;
+}
+
+.item > p {
+  text-align: center;
+}
+
+.left {
+  transform-origin: left center;
+  /* transform: translateX(-50%); */
+}
+
+.right {
+  transform-origin: right center;
+  transform: translateX(50%);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0);
+}
+
+
+
+/* Footer styles */
+footer {
+  /* Updated margin for separation from content */
+  margin-top: 1rem; /* Adjust this value as needed */
+  padding: 1rem; /* Adjust this value as needed */
+  text-align: center;
+}
+
+/* Contact form styles */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem; /* Added spacing below the contact form */
+}
+
+/* Social media links styles */
+.social-media {
+  margin-top: 1rem; /* Added spacing above social media links */
+}
+
+.social-media a {
+  margin: 0 0.5rem; /* Added spacing between social media links */
+}
+
+/* Background-Image For each Project Section */
+.background-image-1 {
+  
+  height: auto; /* Allow the image to determine the height */
+  background-size: cover; /* Adjust the background size property as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Added styles for the project content within .background-image-1 */
+.background-image-1 img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain the image's aspect ratio */
+  margin-bottom: 0.5rem; /* Spacing below the image */
+}
+
+.background-image-1 h2 {
+  font-size: 1.5rem; /* Adjust the title font size */
+  color: #333; /* Text color for the title */
+  margin: 0.5rem 0; /* Spacing around the title */
+}
+
+.background-image-1 p {
+  font-size: 1rem; /* Adjust the description font size */
+  color: #555; /* Text color for the description */
+  margin: 0.5rem 0; /* Spacing around the description */
+}
+
+.background-image-1 a {
+  text-decoration: none;
+  color: #cc0000; /* Link color */
+}
+
+.background-image-1 a:hover {
+  text-decoration: underline; /* Underline the link on hover */
+}
+
+/* Map container styles */
+.map {
+  height: 300px; /* Set the desired height of your map container */
+}
+
+
+/* Centering the form container */
+.contact-form-container {
+  display: flex; /* Using Flexbox to center the container */
+  flex-direction: column; /* Stack the children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  margin: auto; /* Auto margins for horizontal centering */
+  max-width: 600px; /* Maximum width of the form container */
+  width: 100%; /* Full width within its parent container */
+  padding: 20px; /* Padding around the form for spacing */
+  background: inherit; /* Inherit background color from parent for dark/light mode */
+}
+
+/* Styling form elements */
+.contact-form-container form {
+  width: 100%; /* Full width of its container */
+  display: flex; /* Displaying as flex to align children */
+  flex-direction: column; /* Children stacked vertically */
+}
+
+/* Styling form input fields */
+.contact-form-container form input,
+.contact-form-container form textarea {
+  width: 100%; /* Full width to fill the form */
+  padding: 15px; /* Padding for larger click area */
+  margin-bottom: 15px; /* Margin bottom for spacing between fields */
+  border: 1px solid #ccc; /* Border for definition */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+  font-size: 1rem; /* Font size for readability */
+  background: inherit; /* Inherit background for consistency in dark/light mode */
+  color: inherit; /* Inherit text color for consistency in dark/light mode */
+}
+
+/* Styling form labels */
+.contact-form-container form label {
+  width: 100%; /* Full width to align with input fields */
+  margin-bottom: 5px; /* Margin bottom for spacing between label and input */
+  font-weight: bold; /* Bold font for label emphasis */
+  color: inherit; /* Inherit text color for consistency in dark/light mode */
+}
+
+/* Styling the submit button */
+.contact-form-container form .sub-but {
+  padding: 15px 30px; /* Padding for a larger button */
+  font-size: 1rem; /* Font size for readability */
+  border: none; /* No border for a cleaner look */
+  border-radius: 5px; /* Rounded corners for aesthetics */
+  cursor: pointer; /* Cursor to pointer to indicate a clickable button */
+  transition: background-color 0.3s; /* Transition for a hover effect */
+  background: #333; /* Dark background for the button */
+  color: #fff; /* Light text for contrast */
+}
+
+/* Hover and focus styles for the submit button */
+.contact-form-container form .sub-but:hover,
+.contact-form-container form .sub-but:focus {
+  background-color: #555; /* Slightly darker background on hover/focus */
+}
+
+/* Ensure that the form and its elements are accessible */
+.contact-form-container form input:focus,
+.contact-form-container form textarea:focus {
+  outline: 3px solid #ffbf47; /* High contrast outline for accessibility */
+  outline-offset: 2px; /* Offset for the outline */
+}
+
+
+/* Styles for social media links container */
+.social-media {
+  display: flex; /* Display as flexbox to align items inline */
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  gap: 20px; /* Space between social media icons */
+  margin-top: 20px; /* Space above the social media links section */
+}
+
+/* Styles for social media links */
+.social-media a {
+  display: inline-block; /* Display links as inline-block for proper spacing */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Styles for social media images */
+.social-media img {
+  width: 50px; /* Set width for icons */
+  height: 50px; /* Set height for icons */
+  object-fit: cover; /* Ensure the images cover the area without distortion */
+  border-radius: 50%; /* Make images circular */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for social media images */
+.social-media img:hover {
+  transform: scale(1.1); /* Scale up image on hover */
+}

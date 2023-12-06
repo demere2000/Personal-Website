@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags and title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+
+  <!-- Link to external CSS and favicon (if needed) -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="media\icons8-briefcase-48.png">
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- Include Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+  <!-- Toggle mode switch (if you want to include it on this page) -->
+  <!-- ... (your toggle mode switch code) -->
+  <div class="toggle-mode">
+    <h2 class="mode-status">Currently in Light Mode</h2>
+    <label class="toggle-switch">
+      <input type="checkbox" id="mode-toggle">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+
+
+  <!-- Added a container div for better organization -->
+  <div class="container">
+    <!-- Header for the Projects page -->
+    <header>
+      <h1 class="dark-mode-text">Projects</h1>
+      <nav>
+        <a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+
+    <!-- Main Content for the Projects page -->
+    <main>
+      <!-- Create a container for the projects using the "projects-container" class -->
+      <div class="projects-container">
+        <!-- First Project Section -->
+        <section class="item left">
+          <div class="item__content">
+            <!-- Updated project content with an image, title, description, and GitHub link -->
+            <div class="background-image-1">
+              <img src="media/to-do-list-sc.png" alt="To-Do-List Screenshot">
+              <h2>To-Do-List</h2>
+              <p>Created a simple To-Do-List to add and delete elements.</p>
+              <!-- Add a link to the GitHub repository for Project 1 -->
+              <p><a href="https://demere2000.github.io/Mini-Project/" target="_blank">Click Here to View</a></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Second Project Section -->
+        <section class="item right">
+          <div class="item__content">
+            <div class="background-image-1">
+              <img src="media/quiz-app-sc.png" alt="Quiz App Screenshot">
+              <h2>Quiz App</h2>
+              <p>Created a Quiz App utilizing methods from jQuery</p>
+              <!-- Add a link to the GitHub repository for Project 2 -->
+              <p><a href="https://demere2000.github.io/quiz-app/" target="_blank">Click Here to View</a></p>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Add 8 More Project Sections (Copy the one above) -->
+        <!-- Third Project Section -->
+        <section class="item left">
+          <div class="item__content">
+            <div class="background-image-1">
+              <img src="Project-9/media/JS-calculator-screenshot.png" alt="Calculator Screenshot">
+              <h2>Calculator</h2>
+              <p>My JavaScript calculator is well-structured, featuring a Calculator class and clear methods for
+                handling arithmetic operations. I designed it with a clean, user-friendly interface, and I utilized
+                Bootstrap-based styling for a visually appealing look.</p>
+              <!-- Add a link to the GitHub repository for Project 3 -->
+              <p><a href="https://demere2000.github.io/js-calculator/" target="_blank">View on GitHub</a></p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+
+    <!-- Sidebar (aside) for the Projects page (if needed) -->
+    <aside>
+      <!-- ... (your sidebar content) -->
+    </aside>
+
+    <!-- Footer for Projects Page -->
+    <footer>
+      <!-- Contact Form -->
+      <!-- Wrap both h2 and content in a div -->
+      <div class="footer-content">
+        <h2>Contact</h2>
+        <!-- Add an ID to the form for JavaScript validation -->
+        <form id="contact-form">
+          <label for="fname">First Name:</label><br>
+          <!-- Add required attribute for form validation -->
+          <input type="text" id="fname" name="fname" required><br>
+          <label for="lname">Last Name:</label><br>
+          <input type="text" id="lname" name="lname" required><br>
+          <label for="email">Email:</label><br>
+          <!-- Add type="email" and required attribute for email validation -->
+          <input type="email" id="email" name="email" required><br>
+          <!-- Add a message field for a more comprehensive contact form -->
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4"></textarea><br>
+          <input type="submit" class="sub-but" value="Submit">
+        </form>
+      </div>
+      <!-- Social media links -->
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/demere-walker-b33b16286/" target="_blank"><img
+            src="media/linkedin-logo.png" height="50" width="50"></a>
+        <a href="https://codepen.io/your-work/" target="_blank"><img src="media/codepen.jpg" height="50" width="50"></a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- div container for map -->
+  <div id="map" class="map"></div>
+
+  <!-- Include JavaScript (script.js) for dark/light mode toggle and other functionality (if needed) -->
+  <script src="script.js"></script>
+</body>
+
+</html>
